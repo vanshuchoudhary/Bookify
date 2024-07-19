@@ -1,0 +1,93 @@
+
+
+
+.showcase-area {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Use min-height instead of fixed height */
+    background-color: white;
+    margin: 15px;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.showcase-container {
+    flex: 1;
+    background: white url("./im4.jpg");
+    mix-blend-mode: multiply;
+    /* background-size: cover; */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(80%);
+}
+
+
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-top: 20px; /* Add margin-top for separation from image */
+}
+
+.main-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(45deg, #ff00cc, #3333ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: colorChange 5s infinite alternate;
+}
+
+.text1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.1rem;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.text1 .Typewriter__wrapper {
+    display: inline-block;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .showcase-container {
+        flex: none;
+        height: 50vh; /* Set a specific height for the image container on smaller screens */
+    }
+
+    .text {
+        margin-top: 10px; /* Reduce margin-top for smaller screens */
+    }
+
+    .main-title {
+        font-size: 2.5rem; /* Decrease font size for smaller screens */
+    }
+
+    .text1 {
+        font-size: 1.8rem; /* Decrease font size for smaller screens */
+    }
+}
+
+
+@keyframes colorChange {
+    0% {
+        color: #ff00cc; /* Initial color */
+    }
+    50% {
+        color: #3333ff; /* Middle color */
+    }
+    100% {
+        color: #ff00cc; /* Final color */
+    }
+}

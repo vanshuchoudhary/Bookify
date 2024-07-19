@@ -1,0 +1,131 @@
+/* Reset box model */
+
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center content vertically and horizontally */
+.box {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: #f2f3ff;
+  font-family: "Euclid Circular A", sans-serif;
+  color: #1b1e40;
+}
+
+/* Reset button styles */
+button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+/* Login card styles */
+.login-card {
+  width: 90%;
+  max-width: 400px;
+  padding: 60px 30px 32px;
+  border-radius: 1.25rem;
+  background: #ffffff;
+  text-align: center;
+  transition: 0.4s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Login card title styles */
+.login-card > h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* Form styles */
+.login-form {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+/* Placeholder color for form inputs */
+.login-form input.control::placeholder {
+  color: #9d9fbd;
+}
+
+/* Form input styles */
+.control {
+  border: 1.5px solid #dfe1f0;
+  outline: none;
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  background: #f6f7ff;
+  color: inherit;
+  border-radius: 6px;
+  font-family: inherit;
+  text-align: left;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+/* Submit button styles */
+button.control {
+  cursor: pointer;
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  background: #454a8f;
+  color: #f7f7f7;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: all 0.375s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .login-card {
+    padding: 40px 20px 24px;
+  }
+
+  .control {
+    height: 48px;
+    font-size: 16px;
+  }
+
+  button.control {
+    height: 48px;
+    font-size: 0.875rem;
+  }
+
+  .login-card > h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 30px 15px 20px;
+  }
+
+  .control {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  button.control {
+    height: 40px;
+    font-size: 0.75rem;
+  }
+
+  .login-card > h2 {
+    font-size: 24px;
+  }
+}

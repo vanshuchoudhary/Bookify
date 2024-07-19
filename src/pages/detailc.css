@@ -1,0 +1,14 @@
+
+  .container .btn-success {
+    color: #fff;
+    background-color: #28a745; /* Success button color */
+    border-color: #28a745;
+  }
+  
+  .container .btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
+  
+  /* Style the modal here if needed */
+  
